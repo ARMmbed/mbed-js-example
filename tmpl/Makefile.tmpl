@@ -1,0 +1,12 @@
+
+JERRY_SRC=https://github.com/ARMmbed/jerryscript
+
+EXTRAS=
+EXTRAS_CLEAN=$(strip $(EXTRAS) ../../../source)
+
+.PHONY: all
+all: jerryscript
+	cd jerryscript/targets/mbedos5 && rm -f source/js_encoded.cpp && rm -f source/main.cpp && make BOARD=$(BOARD) EXTRA_SRC="$(EXTRAS_CLEAN)" EXTERN_BUILD_DIR=../../../out/$(BOARD) NO_JS=1
+
+jerryscript:
+	git clone $(JERRY_SRC)

@@ -1,0 +1,43 @@
+/* Copyright (c) 2016 ARM Limited. All rights reserved. */
+
+// Provides jsmbed_js_launch()
+#include "jerryscript-mbed-launcher/launcher.h"
+
+// Provides JSMBED_USE_WRAPPER()
+#include "jerryscript-mbed-library-registry/registry.h"
+
+// Provides the base wrapper registration symbol that JSMBED_USE_WRAPPER uses.
+// This means all of the base handlers will be registered.
+#include "jerryscript-mbed-drivers/lib_drivers.h"
+
+<% _.each(libraries, function(item, key, list) { %>
+<% _.each(item.config.includes, function(item, key, list) { %>
+#include "<%= item %>"
+<% }); %>
+<% }); %>
+
+#include "jerryscript-mbed-event-loop/EventLoop.h"
+#include "Callback.h"
+
+using mbed::js::EventLoop;
+using mbed::Callback;
+
+<% _.each(libraries, function(item, key, list) { %>
+  <%= item.config.global_code %>
+<% }); %>
+
+int main() {
+<% _.each(libraries, function(item, key, list) { %>
+  <%= item.config.init_code %>
+<% }); %>
+
+  JERRY_USE_MBED_LIBRARY(base);
+
+<% _.each(libraries, function(item, key, list) { %>
+  JERRY_USE_MBED_LIBRARY(<%= item.config.name %>);
+<% }); %>
+
+  jsmbed_js_launch();
+
+  return 0;
+}
