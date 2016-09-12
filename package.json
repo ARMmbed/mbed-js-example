@@ -20,6 +20,6 @@
     
   },
   "devDependencies": {
-    "mbed-js-gulp": "matthewelse/mbed-js-gulp"
+    "mbed-js-gulp": "ARMmbed/mbed-js-gulp"
   }
 }
