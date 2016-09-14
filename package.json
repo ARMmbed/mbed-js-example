@@ -1,5 +1,5 @@
 {
-  "name": "mbed-js-examples",
+  "name": "mbed-js-example",
   "version": "0.0.1",
   "description": "",
   "main": "main.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ARMmbed/mbed-js-examples.git"
+    "url": "git+https://github.com/ARMmbed/mbed-js-example.git"
   },
   "author": "Matthew Else <Matthew.Else@arm.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/ARMmbed/mbed-js-examples/issues"
+    "url": "https://github.com/ARMmbed/mbed-js-example/issues"
   },
-  "homepage": "https://github.com/ARMmbed/mbed-js-examples#readme",
+  "homepage": "https://github.com/ARMmbed/mbed-js-example#readme",
   "dependencies": {
     
   },
