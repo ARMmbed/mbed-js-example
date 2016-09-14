@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matthewelse/mbed-js-examples.git"
+    "url": "git+https://github.com/ARMmbed/mbed-js-examples.git"
   },
-  "author": "Matthew Else <matthewelse1997@gmail.com>",
+  "author": "Matthew Else <Matthew.Else@arm.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matthewelse/mbed-js-examples/issues"
+    "url": "https://github.com/ARMmbed/mbed-js-examples/issues"
   },
-  "homepage": "https://github.com/matthewelse/mbed-js-examples#readme",
+  "homepage": "https://github.com/ARMmbed/mbed-js-examples#readme",
   "dependencies": {
     
   },
