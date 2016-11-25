@@ -12,9 +12,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-var flash = require('./flash_leds');
+
+var blink = require('./blink_leds');
 
 setInterval(function() {
-	print("blink");
-	flash();
+	blink();
 }, 1000);
