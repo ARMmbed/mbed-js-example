@@ -14,10 +14,10 @@
  */
 
 var led = DigitalOut(LED1);
+
 var blink = function() {
-	print("flash");
-	print(led.read());
-	led.write(1 - led.read());
-}
+	led.write(led.read() ? 0 : 1);
+	print("blink! LED is now " + led.read());
+};
 
 module.exports = blink;
