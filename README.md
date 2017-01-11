@@ -10,6 +10,12 @@ Install:
 * [Gulp](http://gulpjs.com/).
 * [mbed CLI](https://github.com/ARMmbed/mbed-cli) and its dependencies.
 
+On Windows you'll also need:
+
+* [GNU Make](http://gnuwin32.sourceforge.net/packages/make.htm).
+
+Make sure that `make`, `arm-none-eabi-gcc` and all other tools are in your [PATH](http://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/).
+
 ## Build
 
 1. Run `npm install`.
