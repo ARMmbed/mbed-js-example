@@ -7,8 +7,13 @@ Blinky for [JavaScript on mbed](https://developer.mbed.org/javascript-on-mbed/).
 Install:
 
 * A recent version of [node.js](http://nodejs.org/).
-* [Gulp](http://gulpjs.com/).
-* [mbed CLI](https://github.com/ARMmbed/mbed-cli) and its dependencies.
+* A global version of [Gulp](http://gulpjs.com/), via:
+
+   ```
+   $ npm install -g gulp
+   ```
+
+* [Mbed CLI](https://github.com/ARMmbed/mbed-cli) and its dependencies.
 
 On Windows you'll also need:
 
