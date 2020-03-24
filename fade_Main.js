@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-var blink = require('./blink_leds');
+var fade = require('./FadeLED/fade_led');
 
 setInterval(function() {
-	blink();
+	fade();
 }, 1000);
